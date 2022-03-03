@@ -2,6 +2,14 @@
 
 PASSWORD=$1
 
+while getopts f: option;
+do 
+    case $option in
+        f) PASSWORD=$(<$OPTARG);;
+    esac
+done
+
+
 #Colors
 FAIL='\033[31m'
 SUCCESS='\033[32m'
