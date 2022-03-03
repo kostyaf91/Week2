@@ -2,6 +2,7 @@
 
 PASSWORD=$1
 
+#-f argument option
 while getopts f: option;
 do 
     case $option in
@@ -22,7 +23,7 @@ NO_SMALL_LETTERS='Password should contain at least 1 small letter'
 NO_NUMBER='Password should contain at least 1 number'
 
 
-
+#Password validation
 if [[ $PASSWORD =~ [A-Z] ]]
 then
     if [[ $PASSWORD =~ [a-z] ]]
