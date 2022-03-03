@@ -14,7 +14,7 @@ NO_SMALL_LETTERS='Password should contain at least 1 small letter'
 NO_NUMBER='Password should contain at least 1 number'
 
 
-
+#Password validation
 if [[ $PASSWORD =~ [A-Z] ]]
 then
     if [[ $PASSWORD =~ [a-z] ]]
